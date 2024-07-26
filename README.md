@@ -1,56 +1,106 @@
-# Data Exploration and Modeling Project
+# Diabetes Prediction Project
 
-## Overview
+## Description
 
-This project aims to perform an in-depth data exploration and modeling on a given dataset. The primary objectives are to understand the variables, handle missing values, visualize data, perform correlation analysis, and build predictive models.
+This project utilizes a dataset originally provided by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). The primary objective is to predict whether a patient has diabetes based on certain diagnostic measurements. The dataset includes several medical predictor variables and one target variable (Outcome).
 
-## Data Exploration
+## Dataset Description
 
-### Descriptive Analysis
+The dataset consists of the following variables:
 
-1. **Understand the Variables**:
-    - Examine the dataset to understand the variables and their corresponding values.
+| Variable                  | Description |
+|---------------------------|-------------|
+| Pregnancies               | Number of times pregnant |
+| Glucose                   | Plasma glucose concentration in an oral glucose tolerance test |
+| BloodPressure             | Diastolic blood pressure (mm Hg) |
+| SkinThickness             | Triceps skinfold thickness (mm) |
+| Insulin                   | Two-hour serum insulin |
+| BMI                       | Body Mass Index |
+| DiabetesPedigreeFunction  | Diabetes pedigree function |
+| Age                       | Age in years |
+| Outcome                   | Class variable (either 0 or 1). 268 of 768 values are 1, and the others are 0 |
 
-2. **Handle Missing Values**:
-    - For the variables `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI`, a value of zero does not make sense and thus indicates missing values. These missing values need to be treated accordingly.
+## Project Task: Week 1
 
-3. **Visual Exploration**:
-    - Create histograms for the variables `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI` to visually explore their distributions and identify any anomalies.
+### Data Exploration
 
-4. **Data Types**:
-    - The dataset contains both integer and float data type variables. Create a count (frequency) plot to describe the data types and the count of variables in each category.
+1. **Descriptive Analysis**:
+   - Understand the variables and their corresponding values.
+   - Identify columns where a value of zero does not make sense (indicating missing values): `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI`.
+   - Treat missing values appropriately.
 
-### Data Balance
+2. **Visual Exploration**:
+   - Create histograms for `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI` to explore their distributions.
 
-1. **Balance Check**:
-    - Plot the count of outcomes by their value to check the balance of the data. Describe the findings and plan the future course of action based on the balance of the dataset.
+3. **Data Type Analysis**:
+   - Generate a count (frequency) plot describing the data types (integer and float) and the count of variables.
 
-### Scatter Charts
+4. **Data Balance Check**:
+   - Plot the count of outcomes by their value to check the balance of the data.
+   - Describe findings and plan the future course of action based on the data balance.
 
-1. **Pairwise Relationships**:
-    - Create scatter charts between pairs of variables to understand the relationships between them. Describe the findings based on the visualizations.
+5. **Scatter Charts**:
+   - Create scatter charts between pairs of variables to understand relationships.
+   - Describe findings based on these visualizations.
 
-### Correlation Analysis
+6. **Correlation Analysis**:
+   - Perform correlation analysis on the dataset.
+   - Visualize the correlation matrix using a heatmap.
 
-1. **Correlation Heatmap**:
-    - Perform correlation analysis on the dataset.
-    - Visualize the correlation matrix using a heatmap to understand the relationships between variables.
+## Project Task: Week 2
 
 ### Data Modeling
 
 1. **Model Building Strategies**:
-    - Devise strategies for model building, including the selection of an appropriate validation framework. Clearly express the thought process behind the chosen strategies.
+   - Devise strategies for building a predictive model, including selecting an appropriate validation framework.
+   - Document the thought process behind the chosen strategies.
 
 2. **Classification Algorithm**:
-    - Apply an appropriate classification algorithm to build a predictive model.
+   - Apply an appropriate classification algorithm to predict whether the patients have diabetes.
 
 3. **Model Comparison**:
-    - Compare various models with the results from the K-Nearest Neighbors (KNN) algorithm.
+   - Compare various models with the results from the K-Nearest Neighbors (KNN) algorithm.
 
 4. **Classification Report**:
-    - Create a detailed classification report analyzing sensitivity, specificity, AUC (ROC curve), etc.
-    - Be descriptive in explaining the values of these parameters used in the analysis.
+   - Analyze and report on sensitivity, specificity, AUC (ROC curve), and other relevant metrics.
+   - Provide detailed explanations for the values of these parameters used in the analysis.
+
+## Data Reporting
+
+1. **Dashboard Creation**:
+   - Create a dashboard in Tableau to present the findings. The dashboard should include:
+     - A pie chart describing the diabetic and non-diabetic population.
+     - Scatter charts between relevant variables to analyze relationships.
+     - Histogram or frequency charts to analyze data distribution.
+     - A heatmap of the correlation analysis among relevant variables.
+
+2. **Age Bracket Analysis**:
+   - Create bins for age values (e.g., 20-25, 25-30, 30-35, etc.).
+   - Analyze different variables within these age brackets using a bubble chart.
 
 ## Conclusion
 
-This project is designed to provide a comprehensive approach to data exploration and modeling. By following the outlined steps, we aim to gain valuable insights from the dataset, handle missing values effectively, visualize relationships, perform correlation analysis, and build robust predictive models. The detailed analysis and comparison of different models will help in selecting the best-performing model for the given data.
+This project comprehensively analyses the NIDDK dataset, from data exploration and visualization to predictive modelling and data reporting. The aim is to accurately predict diabetes status using various diagnostic measurements, with insights presented through detailed visualizations and dashboards.
+
+## How to Use This Repository
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/healthcare-data-insights.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd healthcare-data-insights
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the data exploration scripts or notebooks to perform analysis and build models.
+
+## Acknowledgments
+
+The dataset used in this project is provided by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). The project aims to contribute to the understanding and prediction of diabetes based on medical data.
