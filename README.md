@@ -20,7 +20,6 @@ The dataset consists of the following variables:
 | Age                       | Age in years |
 | Outcome                   | Class variable (either 0 or 1). 268 of 768 values are 1, and the others are 0 |
 
-## Project Task: Week 1
 
 ### Data Exploration
 
@@ -46,8 +45,6 @@ The dataset consists of the following variables:
 6. **Correlation Analysis**:
    - Perform correlation analysis on the dataset.
    - Visualize the correlation matrix using a heatmap.
-
-## Project Task: Week 2
 
 ### Data Modeling
 
@@ -82,22 +79,6 @@ The dataset consists of the following variables:
 
 This project comprehensively analyses the NIDDK dataset, from data exploration and visualization to predictive modelling and data reporting. The aim is to accurately predict diabetes status using various diagnostic measurements, with insights presented through detailed visualizations and dashboards.
 
-## How to Use This Repository
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/healthcare-data-insights.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd healthcare-data-insights
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 4. Run the data exploration scripts or notebooks to perform analysis and build models.
 
